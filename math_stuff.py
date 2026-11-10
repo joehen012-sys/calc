@@ -2,11 +2,9 @@
 import hashlib
 import owner
 
+RUNNING = True
 
 class math():
-
-    running = True
-
     def point_plotter(max_x, max_y, min_x, min_y):
         x = min_x
         y = min_y
@@ -337,7 +335,7 @@ class math():
         elif choice == "4":
             math.converter()
         elif choice == "5":
-            math.running = False
+            RUNNING = False
         elif choice == owner.get_name():
             password = owner.get_password()
             if input("Password: ") == password:
@@ -581,4 +579,5 @@ class games():
             print(f"Total: {total}")
 
 
-math.calc()
+while RUNNING
+    math.calc()
